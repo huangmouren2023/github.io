@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#chat-history {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#question-input {
+    width: 300px;
+    margin-right: 10px;
+}
+
+#initial-conversations {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
