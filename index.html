@@ -2,18 +2,36 @@
 <html>
 <head>
     <title>Chat with GPT-3.5</title>
-    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        #chatbox {
+            width: 80%;
+            height: 400px;
+            border: 1px solid #000;
+            padding: 10px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        #input {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Chat with GPT-3.5</h1>
-    <div id='chat-history'></div>
-    <input type='text' id='question-input' placeholder='Type your question here...'>
-    <button id='ask-button'>Ask</button>
-    <div id='initial-conversations'>
-        <h2>Initial Conversations</h2>
-        <button id='add-conversation-button'>Add Conversation</button>
-    </div>
-    <button id='clear-database-button'>Clear Database</button>
-    <script src='script.js'></script>
+    <div id="chatbox"></div>
+    <input id="input" type="text" placeholder="Ask something...">
+    <button id="send">Send</button>
+    <button id="clear">Clear Database</button>
+    <script src="script.js"></script>
 </body>
 </html>
